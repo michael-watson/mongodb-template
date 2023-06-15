@@ -1,0 +1,35 @@
+{
+  "name": "subgraph-template-javascript-apollo-server-mongo",
+  "description": "A boilerplate template for Apollo Server with javascript and a MongoDB datasource",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apollographql/subgraph-template-javascript-apollo-server-boilerplate"
+  },
+  "homepage": "https://github.com/apollographql/subgraph-template-javascript-apollo-server-boilerplate#readme",
+  "bugs": {
+    "url": "https://github.com/apollographql/subgraph-template-javascript-apollo-server-boilerplate/issues"
+  },
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=18.0"
+  },
+  "scripts": {
+    "dev": "nodemon --ext \"js,graphql\" src/index.js",
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.0.0",
+    "@apollo/subgraph": "^2.3.1",
+    "dotenv": "^16.1.4",
+    "graphql": "latest",
+    "graphql-tag": "latest",
+    "mongodb": "^5.6.0"
+  },
+  "devDependencies": {
+    "jest": "29.5.0",
+    "nodemon": "2.0.22"
+  }
+}
